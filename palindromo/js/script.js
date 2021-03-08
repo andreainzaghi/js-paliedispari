@@ -10,17 +10,15 @@ var dritta = [];
 var rovescio = [];
 function palindromo (parola) {
 
-    for (  y = parola.length; y < 0 ; y-- ) {
-        rovescio.push(parola[y]);
-    }
-
-
     for (  i = 0; i < parola.length; i++ ) {
         dritta.push(parola[i]);
     }
 
+    for (  y = parola.length; y < 0 ; y-- ) {
+        rovescio.push(parola[y]);
+    }
 
-    if (rovescio[i] == dritta[i]) {
+    if (rovescio = dritta) {
         return 'true';
     }
 }
@@ -29,5 +27,5 @@ function palindromo (parola) {
 if ('true') {
     console.log('La parola ' + parola + ' è palindroma.');
 } else {
-    console.log('La parola ' + parola + ' non è palindroma.')
+    console.log('La parola ' + parola + ' non è palindroma.');
 }
