@@ -3,29 +3,39 @@
 // Chiedere all’utente di inserire una parola
 // Creare una funzione per capire se la parola inserita è palindroma
 
-var parola = prompt('Inserisci una parola');
 
 
-var dritta = [];
-var rovescio = [];
+
+
 function palindromo (parola) {
 
-    for (  i = 0; i < parola.length; i++ ) {
-        dritta.push(parola[i]);
+
+    var rovescio = "";
+    for ( var x = parola.length - 1 ; x >= 0 ; x-- ) {
+        rovescio += parola[x];
     }
 
-    for (  y = parola.length; y < 0 ; y-- ) {
-        rovescio.push(parola[y]);
-    }
-
-    if (rovescio = dritta) {
-        return 'true';
-    }
+    return rovescio;
 }
 
 
-if ('true') {
+var parola = prompt('Inserisci una parola');
+
+var rovescio= palindromo (parola);
+if (rovescio === parola) {
     console.log('La parola ' + parola + ' è palindroma.');
 } else {
     console.log('La parola ' + parola + ' non è palindroma.');
 }
+
+
+
+
+// ............................................................................
+//
+// function capovolgiParola(parola){
+//   return stringa;
+// }
+//
+// var parola= capovolgiParola("classe 27")
+// console.log(parola);
