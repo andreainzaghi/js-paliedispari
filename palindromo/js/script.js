@@ -8,8 +8,6 @@
 
 
 function palindromo (parola) {
-
-
     var rovescio = "";
     for ( var x = parola.length - 1 ; x >= 0 ; x-- ) {
         rovescio += parola[x];
